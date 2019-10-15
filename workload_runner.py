@@ -82,7 +82,7 @@ def main() -> None:
                         type=str,
                         help="Namespace where the OCS components are running")
     parser.add_argument("-s", "--storageclass",
-                        default="openshift-storage-ceph-rbd",
+                        default="gp2",
                         type=str,
                         help="StorageClassName for the workload's PVCs")
     parser.add_argument("-z", "--sleep-on-error",
